@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
+
+  root 'main#all_jobs'
   get 'new_jobs' => 'main#new_jobs'
+  get 'reset' => 'main#reset'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

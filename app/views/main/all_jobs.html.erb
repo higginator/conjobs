@@ -1,0 +1,10 @@
+<div>
+<% @all_jobs.each do |job| %>
+	<ul><%= job.title %>
+		<li><%= job.company %></li>
+		<li><%= job.formattedLocation %></li>
+		<li><%= job.date %></li>
+		<a href="<%= job.url %>" target='_blank'><li>more info</li></a>
+	</ul>
+<% end %>
+</div>
