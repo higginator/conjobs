@@ -16,5 +16,7 @@ class MainController < ApplicationController
 	end
 
 	def reset
+		clear_job_database
+		reset_index
 	end
 end

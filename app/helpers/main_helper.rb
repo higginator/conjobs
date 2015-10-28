@@ -45,4 +45,14 @@ module MainHelper
 			:url => job['url'],
 			)
 	end
+
+	def clear_job_database
+		Job.destroy_all
+	end
+
+	def reset_index
+		master_job_index = Index.first
+		master_job_index.start_index = 1
+		master_job_index.save
+	end
 end
